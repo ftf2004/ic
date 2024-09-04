@@ -5,7 +5,6 @@
 int stack[MAX];
 int top = -1;
 
-void initialize();
 int isEmpty();
 int isFull();
 void push(int value);
@@ -15,7 +14,6 @@ void display();
 int main() {
     int choice, value;
 
-    initialize();
     printf("\nStack Operations Menu:\n");
     printf("1. Push\n");
     printf("2. Pop\n");
@@ -55,9 +53,6 @@ int main() {
     return 0;
 }
 
-void initialize() {
-    top = -1;
-}
 
 int isEmpty() {
     return top == -1;
